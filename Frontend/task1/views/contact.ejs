@@ -1,0 +1,84 @@
+<%- include('../partials/header'); %>
+
+<link rel="stylesheet" href="/stylesheet/contact.css">
+ <!-- Bootstrap CSS -->
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+ integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+
+<div class="container">
+    <div class="card px-5 py-5" >
+        <div id="error"></div>
+        <div class="row justify-content-center mx-5">
+            <div class="col-12">
+                <h1 class="card-title text-center">Contact Me</h1>
+            </div>
+        </div>
+            <form action="" onsubmit="return validation()">
+                    <div class="form-group row">
+                        <div class="input-group col-12 mx-auto mt-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="addon-wrapping"><i class="fas fa-user-circle"></i></span>
+                            </div>
+                                <input  type="text" name="name" id="Name"class="form-control" placeholder="Name">
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <div class="input-group col-12 mx-auto mt-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="addon-wrapping"><i class="fas fa-envelope"></i></span>
+                            </div>
+                                <input  type="text" name="email" id="email" class="form-control" placeholder="Email">
+                        </div>
+                    </div>
+                
+                    <div class="form-group row">
+                        <div class="input-group col-12 mx-auto mt-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="addon-wrapping"><i class="fas fa-mobile-alt"></i></span>
+                            </div>
+                                <input  type="text" name="contact" id="contact" class="form-control" placeholder="Phone Number">
+                        </div>
+                    </div>
+
+                    <div class="row d-flex justify-content-center mt-4">
+                        <button type="submit" class="btn btn-info btn-block rounded-0 mx-auto ">Submit</button>
+                    </div> 
+    
+                        
+            </form>
+    </div>
+</div>
+
+<script>
+    function validation(){
+            var Name =document.getElementById("Name").value;
+            var email =document.getElementById("email").value;
+            var contact =document.getElementById("contact").value;
+            var error =document.getElementById("error");
+            var text;
+        
+            if(Name.length<1){
+                text="enter valid name";
+                error.innerHTML=text;
+                return false;
+            }
+            if(email.indexOf("@", 0) < 0){
+                text="enter valid email id";
+                error.innerHTML=text;
+                return false;
+            }
+            if(isNaN(contact)||contact.length!=10){
+                text="enter valid phone number";
+                error.innerHTML=text;
+                return false;
+            }
+            
+            alert("form submitted successfully");
+             return true;
+        }
+</script>
+
+
+<%- include('../partials/footer'); %>

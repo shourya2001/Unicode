@@ -1,0 +1,107 @@
+/* body{
+    background: url(https://lh3.googleusercontent.com/oeDgPgTZwqyngjd3JsE2Ni5Ay02zVgFg5xw8opObbOb-83SezOf9W5mnI7xvc8fZrDzCVTqdEYkU89hsn2saUjJFbsB706drI8wCuIH0r3YZJ9J3Q3lh_0AyxfpkdTwHEAHi0DFcjjOXsrj91v7q7gM54tIyw8BJwOtXzHZukt9CRR8rYUhEH0wCsmQNMPMRKxjFLGAPP90Qs2Bcw4a6jyX16xRKhtITbYc9au12taiHsqaWj3pNIBhTgcFZS23fSWnYzPdG9Z39f7QtAsirYR78-eJM4MkWGu5WgwYgeJoY4KmV6IMpos2cHbzuJY1dFG4_wO334X0CUtc6ORntGYvItO6TbaSSC2RM9TWUMxvPWbYlGCO4lq7v42I9Qit7JScbuasaB0O90hxix9mQu0IJALWIItovaolhc6mgj5hTD16Mwi1_ipWf7otUXgKXegaOxIjtqZg_lcixPdlOX0AFVA-Vibc41PsCBo2kf6c-H_cX42B9_TMLQYxygGXradKVCRC_2ZaYQgYa2D9Vs8HtLMvLGzNVarfh4lOBSPHf79Vc41N7c81tJy6n8zCx15RWFw9xx8MX61J_p4rYtmCf54P-MjDpFX7Xiwy-mGXntq4EoDbuqbSRPGDvB8l1SonZoueij0RzEvbrV8hJbQBS0RRan344CQvwiuFxvzw5jls1bP2C57PTOFhMuWw=w1366-h617-no?authuser=0);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+} */
+
+.container{
+    /* margin-left: 5%; */
+    margin-top: 5%;
+    position: relative;
+    /* width: 500px; */
+}
+
+h2{
+    text-align: center;
+}
+
+.skills{
+    position: relative;
+    display: flex;
+    margin-top: 20px;
+    margin-left: 60px;
+    margin-right: -50px;
+    padding: 24px 10px 18px;
+    /* background: linear-gradient(#616161 0%, #333 10%, #222); */
+    border-radius: 8px;
+    overflow: hidden;
+    /* border: 1px solid #000; */
+    transition: 0.5s;
+}
+
+.skills:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    z-index: 10;
+}
+
+.skills .name{
+    position: relative;
+    /* width: 50%; */
+    text-align: right;
+    color: #111;
+    margin-top: 0px;
+    text-transform: uppercase;
+}
+.skills .value{
+    position: relative;
+    width: 40%;
+    text-align: left;
+    color: #111;
+    margin-top: 0px;
+    text-transform: uppercase;
+}
+
+.skills .percentage{
+    position: relative;
+    width: calc(100% - 150px);
+    height: 20px;
+    margin: 0 10px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: inset 0 0 10px #777;
+    overflow: hidden;
+}
+
+.skills .percentage .progress{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 100%;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: inset 0 0 2px #000;
+    animation: animate 4s ease-in-out forwards;
+}
+
+@keyframes animate{
+    from{
+        width:0%;
+    }
+}
+
+.container .row:nth-child(2) .col-12 .skills .percentage .progress{
+    background: linear-gradient(45deg, #1fe6ff, #673AB7);
+}
+.container .row:nth-child(3) .col-12 .skills .percentage .progress{
+    background: linear-gradient(45deg, #3bc0ff, #33ff00);
+}
+.container .row:nth-child(4) .col-12 .skills .percentage .progress{
+    background: linear-gradient(45deg, #ffee54, #ff00ca);
+}
+.container .row:nth-child(5) .col-12 .skills .percentage .progress{
+    background: linear-gradient(45deg, #22ffde, #2196F3);
+}
+.container .row:nth-child(6) .col-12 .skills .percentage .progress{
+    background: linear-gradient(45deg, #16BFFD, #CB3066);
+}
+.container .row:nth-child(7) .col-12 .skills .percentage .progress{
+    background: linear-gradient(45deg, #ff4b1f, #ff9068);
+}

@@ -1,0 +1,43 @@
+/* img{
+    margin-left: 72px;
+} */
+
+img {
+    margin-top: -500px;
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+}  
+
+#myHr {
+    background-color: black;
+}
+
+.my {
+position: absolute;
+top: 40%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+
+.container-fluid {
+    padding-right: 0px;
+}
+
+p{
+    font-size: 20px;
+}
+
+@media(max-width:1040px){
+
+    img{
+        margin-top:-50px;
+    }
+}
+@media(max-width:576px){
+
+    img{
+        /* margin-bottom:-550px; */
+        height: 100%;
+    }
+}

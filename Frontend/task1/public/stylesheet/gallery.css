@@ -1,0 +1,31 @@
+
+
+.container{
+    margin-left: 150px;
+}
+
+h2{
+    margin-top: 3%;
+    text-align: center;
+}
+
+img{
+    border-radius: 10px;
+    border: 1px solid black;
+    /* z-index: 10; */
+}
+
+img:hover{
+    z-index: 100;
+    box-shadow: black;
+}
+@media (max-width: 1200px){
+    .container{
+        width:300px;
+    }
+    .image{
+       margin-top: 15px;
+       margin-bottom: 15px;
+       margin-left: -60px;
+    }
+    }

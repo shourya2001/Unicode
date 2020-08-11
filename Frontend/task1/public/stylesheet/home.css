@@ -1,0 +1,32 @@
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: url(images/shourya1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 80vh;
+}
+
+
+h1{
+    text-align: center;
+    margin-top: 15%;
+    color: black;
+    letter-spacing: 1px;
+    font-size:45px;
+}
+
+p{
+    text-align: center;
+}
+
+.description{
+    margin: 5vh auto 0;
+    width: 60vw;
+    line-height: 1.5;
+    font-size: 1.5em;
+    color: black;
+}
