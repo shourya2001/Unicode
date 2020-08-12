@@ -46,16 +46,6 @@ app.post("/info", function(req,res){
     })
 })
 
-// app.get("/info", function(req,res){
-//     student.find({}, function(err, allStudents){
-//         if(err){
-//             console.log(err);
-//         }else{
-            
-//             res.render("display",{students: allStudents});
-//         }
-//     })
-// })
 
 app.get("/info", function(req,res){
     student.find({}).sort([["average", -1]]).exec(function(err, allStudents){
