@@ -35,3 +35,6 @@
 ### Task 1 and Task 2
 - created a portfolio
 - added a contact me form and each input is validated using javascript 
+
+### Task3
+- Used axios to render information about corona virus
