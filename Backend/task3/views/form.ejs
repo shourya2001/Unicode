@@ -1,19 +1,51 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 </head>
+<style>
+    body{
+        background: linear-gradient(to right, #1488CC,#2B32B2);
+    }
+
+    input{
+        width: 76%;
+        text-align: center;
+    }
+
+    .card{
+        background:linear-gradient(to right, #acb6e5,#86fde8);
+    }
+</style>
 <body>
-    <form action="/info" method="post">
-        <input type="text" name="student[firstName]" id="" placeholder="First Name">
-        <input type="text" name="student[lastName]" id="" placeholder="Last Name">
-        <input type="text" name="student[mathsMarks]" id="" placeholder="Maths Marks">
-        <input type="text" name="student[englishMarks]" id="" placeholder="English Marks">
-        <div>
-            <button type="submit">submit</button>
-        </div>
-    </form>
+
+    <div class="card shadow-lg py-5" style="height: 550px; width: 500px; margin: 10% 30%;">
+        <form action="/info" method="post">
+            <div class="row justify-content-center ">
+                <h1>Form</h1>
+            </div>
+            <div class="row justify-content-center my-5">
+                <input type="text" name="student[firstName]" id="" placeholder="First Name">
+            </div>
+            <div class="row justify-content-center my-5">                
+                <input type="text" name="student[lastName]" id="" placeholder="Last Name" >
+            </div>
+            <div class="row justify-content-center my-5">                
+                <input type="text" name="student[mathsMarks]" id="" placeholder="Maths Marks">
+            </div>
+            <div class="row justify-content-center my-5">                
+                <input type="text" name="student[englishMarks]" id="" placeholder="English Marks">
+            </div>
+            <div class="row justify-content-center my-5">                
+                <button type="submit" class="btn btn-primary">submit</button>
+            </div>
+            
+        </form>
+    </div>
 </body>
 </html>
