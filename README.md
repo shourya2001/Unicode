@@ -29,3 +29,9 @@
 - send a get request to "/" to display form
 - send a post request "/info" and push the response body in the array (students)
 - send get request to "/info" to render the information after sorting
+
+## Frontend
+
+### Task 1 and Task 2
+- created a portfolio
+- added a contact me form and each input is validated using javascript 
