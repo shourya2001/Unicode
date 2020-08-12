@@ -1,28 +1,3 @@
-var express = require("express"),
-    app     = express();
-
-app.set("view engine", "ejs");
-
-app.get("/", function(req,res){
-    res.render("form");
-})
-
-
-
-app.post("/info", function(req,res){
-    var arr =[];
-    var newStudent = new student({
-        firstName: req.body.firstName,
-        lastName: req.body.lastName,
-        englishMarks: req.body.englishMarks,
-        mathsMarks:req.body.mathsMarks
-    });
-    console.log("newStudent: " + newStudent + "\n");
-    arr.push(newStudent);
-    console.log("arr: "+ arr +"\n");
-    descending(arr);
-    res.render("display", {arr:arr});
-})
 
 function descending(list){
     var array =[];
@@ -61,7 +36,3 @@ var students = [ "Rashmil Panchani 99 97", "Parag Vaid 95 93" , "Siddharth Sangh
 
 descending(students);
 
-
-app.listen(process.env.PORT || 3000, process.env.IP, function(){
-    console.log("The Server is listening on " + process.env.PORT);
-});
